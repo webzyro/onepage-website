@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Looks Confident</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light shadow-lg sticky-top"
+      id="navbar-container"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="/">
+          <img src="./images/havells.png" alt="Logo" class="img-fluid w-75" />
+        </a>
+        <!-- Replace navbar-toggler with offcanvas button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Add offcanvas -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a
+              class="navbar-brand offcanvas-title"
+              id="offcanvasNavbarLabel"
+              href="/"
+            >
+              <img
+                src="./images/havells.png"
+                alt="Logo"
+                class="img-fluid w-75"
+              />
+            </a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto mb-2">
+              <a
+                href="tel:+91-1234567890"
+                class="btn btn-dark d-flex align-items-center gap-2"
+              >
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Now On 1234567890</span>
+              </a>
+            </div>
+            <div class="ms-2">
+              <button
+                class="btn btn-outline-dark fw-semibold w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#appointmentModal"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero Section -->
+      <section class="container-fluid pt-3" id="hero-container">
+        <div class="container mx-auto" id="hero-section">
+          <div class="d-flex flex-column gap-3" id="hero-left">
+            <span class="text-white fw-semibold">Hair Growth Treatment</span>
+            <h1 class="text-light fs-3 fw-bold">
+              Non-Surgical Hair Growth Treatment That Works From The Root
+            </h1>
+            <p class="text-white">
+              We treat internally from the root and externally with the latest
+              hair growth treatments. Effective hair treatment for men & women
+            </p>
+            <a href="tel:+91-1234567890" class="btn btn-dark" id="btn"
+              >Book Your Appointment</a
+            >
+          </div>
+          <div id="hero-right">
+            <img src="/images/hero.webp" alt="" />
+            <div class="badges">
+              <div class="badge doctors">
+                <span class="number">300+</span>
+                <span class="text">Doctors Globally</span>
+              </div>
+              <div class="badge clinics">
+                <span class="number">300+</span>
+                <span class="text">Clinics Globally</span>
+              </div>
+              <div class="badge patients">
+                <span class="number">300+</span>
+                <span class="text">Happy Patients</span>
+              </div>
+              <div class="badge success">
+                <span class="number">300+</span>
+                <span class="text">Success Rate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="w-100 pt-3 pb-2">
+        <div class="container">
+          <div class="owl-carousel services-carousel owl-theme">
+            <!-- Condition 1 -->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="./images/1.png"
+                loading="lazy"
+                alt="Dandruff"
+                class="img-fluid rounded-3 object-fit-cover mb-3"
+                id="condition-img"
+              />
+              <div class="position-absolute" id="service-name">
+                <h4 class="fw-light">Acne Scars</h4>
+              </div>
+            </div>
+
+            <!-- Condition 2 -->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="./images/2.png"
+                loading="lazy"
+                alt="Dark Circle"
+                class="img-fluid rounded-3 object-fit-cover mb-3"
+                id="condition-img"
+              />
+              <div class="position-absolute" id="service-name">
+                <h4 class="fw-light">Acne Treatment</h4>
+              </div>
+            </div>
+
+            <!-- Condition 3 -->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="./images/3.png"
+                loading="lazy"
+                alt="Moles"
+                class="img-fluid rounded-3 object-fit-cover mb-3"
+                id="condition-img"
+              />
+              <div class="position-absolute" id="service-name">
+                <h4 class="fw-light">Moles Treatment</h4>
+              </div>
+            </div>
+
+            <!-- Condition 4 -->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="./images/4.png"
+                loading="lazy"
+                alt="Pigmentation"
+                class="img-fluid rounded-3 object-fit-cover mb-3"
+                id="condition-img"
+              />
+              <div class="position-absolute" id="service-name">
+                <h4 class="fw-light">Pigmentation</h4>
+              </div>
+            </div>
+
+            <!-- Condition 5 -->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center position-relative"
+            >
+              <img
+                src="./images/5.png"
+                loading="lazy"
+                alt="Wrinkle Face"
+                class="img-fluid rounded-3 object-fit-cover mb-3"
+                id="condition-img"
+              />
+              <div class="position-absolute" id="service-name">
+                <h4 class="fw-light">Wrinkle Face</h4>
+              </div>
+            </div>
+            <!-- Condition 6 -->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="./images/6.png"
+                loading="lazy"
+                alt="Wrinkle Face"
+                class="img-fluid rounded-3 object-fit-cover mb-3"
+                id="condition-img"
+              />
+              <div class="position-absolute" id="service-name">
+                <h4 class="fw-light">Hair Fall</h4>
+              </div>
+            </div>
+            <!-- Condition 7 -->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="./images/7.png"
+                loading="lazy"
+                alt="Wrinkle Face"
+                class="img-fluid rounded-3 object-fit-cover mb-3"
+                id="condition-img"
+              />
+              <div class="position-absolute" id="service-name">
+                <h4 class="fw-light">Hair Transplant</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="container-fluid py-3" id="stats-section">
+        <div class="container mx-auto">
+          <div class="" id="stats-wrapper">
+            <div class="stat-box">
+              <div class="stat-icon">
+                <img src="/images/stats1.png" alt="stats-img" />
+              </div>
+              <div class="stat-content">
+                <div class="stat-percentage">85%</div>
+                <div class="stat-text">Hair Growth</div>
+              </div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon">
+                <img src="/images/stats2.png" alt="stats-img" />
+              </div>
+              <div class="stat-content">
+                <div class="stat-percentage">85%</div>
+                <div class="stat-text">Hair Growth</div>
+              </div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon">
+                <img src="/images/stats3.png" alt="stats-img" />
+              </div>
+              <div class="stat-content">
+                <div class="stat-percentage">85%</div>
+                <div class="stat-text">Hair Growth</div>
+              </div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon">
+                <img src="/images/stats4.png" alt="stats-img" />
+              </div>
+              <div class="stat-content">
+                <div class="stat-percentage">85%</div>
+                <div class="stat-text">Hair Growth</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="container-fluid py-3" id="testimonial-section">
+        <div class="container mx-auto">
+          <div class="text-center d-flex flex-column">
+            <h3 class="fw-bold">Patient Testimonials</h3>
+            <p class="fw-semibold">Accredited and recognized expertise</p>
+          </div>
+
+          <div class="owl-carousel video-testimonial owl-theme">
+            <div class="item result-card">
+              <img
+                src="/images/result1.jpg"
+                alt="result-img"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="result-content">
+                <div class="result-top">
+                  <i class="fa-solid fa-circle-play fa-xl"></i>
+                  <span class="fw-bold text-white">Author Name</span>
+                </div>
+                <div class="result-bottom">
+                  <p class="text-sm text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta unde culpa inventore voluptates?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item result-card">
+              <img
+                src="images/result2.jpg"
+                alt="result-img"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="result-content">
+                <div class="result-top">
+                  <i class="fa-solid fa-circle-play fa-xl"></i>
+                  <span class="fw-bold text-white">Author Name</span>
+                </div>
+                <div class="result-bottom">
+                  <p class="text-sm text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta unde culpa inventore voluptates?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item result-card">
+              <img
+                src="images/result3.jpg"
+                alt="result-img"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="result-content">
+                <div class="result-top">
+                  <i class="fa-solid fa-circle-play fa-xl"></i>
+                  <span class="fw-bold text-white">Author Name</span>
+                </div>
+                <div class="result-bottom">
+                  <p class="text-sm text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta unde culpa inventore voluptates?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item result-card">
+              <img
+                src="images/result4.jpg"
+                alt="result-img"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="result-content">
+                <div class="result-top">
+                  <i class="fa-solid fa-circle-play fa-xl"></i>
+                  <span class="fw-bold text-white">Author Name</span>
+                </div>
+                <div class="result-bottom">
+                  <p class="text-sm text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta unde culpa inventore voluptates?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="py-5 px-2" id="contact-section">
+        <div class="container mx-auto py-3 text-center" id="contact-wrapper">
+          <div class="d-flex flex-column item-center gap-2">
+            <h3 class="fw-bold">Book an Appointment with our Hair Doctors</h3>
+            <p class="fw-semibold">Unmatched Expertise & Results</p>
+          </div>
+
+          <form action="#" method="POST" id="contact-form">
+            <div class="row g-2 w-75 mx-auto">
+              <div class="col-md-6">
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Name"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  name="phone"
+                  type="tel"
+                  class="form-control"
+                  min="10"
+                  placeholder="Enter Mobile Number"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <div
+              class="form-check d-flex align-items-center justify-content-center"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="checkDefault"
+              />
+              <label class="form-check-label" for="checkDefault">
+                I understand and accept the terms and conditions
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-dark text-uppercase">
+              Book Your Appointment
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="py-5" id="gallery-section">
+        <div class="container mx-auto">
+          <h3 class="fw-bold text-center mb-4">Our Gallery</h3>
+          <div class="parent">
+            <div class="div1">
+              <img
+                src="images/1.png"
+                alt=""
+                width="100%"
+                height="100%"
+                class="object-fit-cover rounded-3"
+              />
+            </div>
+            <div class="div2">
+              <img
+                src="images/7.png"
+                alt=""
+                class="object-fit-cover rounded-3"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div class="div3">
+              <img
+                src="images/6.png"
+                alt=""
+                class="object-fit-cover rounded-3"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div class="div4">
+              <img
+                src="images/5.png"
+                alt=""
+                class="object-fit-cover rounded-3"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div class="div5">
+              <img
+                src="images/4.png"
+                alt=""
+                class="object-fit-cover rounded-3"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div class="div6">
+              <img
+                src="images/1.png"
+                alt=""
+                class="object-fit-cover rounded-3"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div class="div7">
+              <img
+                src="images/2.png"
+                alt=""
+                class="object-fit-cover rounded-3"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div class="div8">
+              <img
+                src="images/3.png"
+                alt=""
+                class="object-fit-cover rounded-3"
+                width="100%"
+                height="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Section -->
+      <section class="py-5" id="why-section">
+        <div class="container mx-auto item-center">
+          <h3 class="fw-bold mb-4 text-center">
+            Why Choose Dr Batra's Hair Growth Treatment ?
+          </h3>
+          <p class="fw-semibold text-center">
+            Struggling with hair loss? Dr Batra’s® offers advanced hair growth
+            treatments designed to bring back your confidence. Our unique
+            combination of homeopathy and advanced hair regrowth treatments like
+            XOGEN and groHair addresses the root causes of hair loss to ensure
+            safe and long-lasting regrowth. Backed by over 130 years of
+            expertise and a team of 300+ qualified doctors, our personalised
+            hair care solutions are designed for both men and women, providing
+            effective results. Whether it's hereditary or lifestyle-related hair
+            loss, our personalised treatments cater to your specific needs. Get
+            started on your hair regrowth journey today with Dr Batra’s®.
+          </p>
+        </div>
+      </section>
+
+      <!-- How we Treat -->
+      <section class="py-5" id="treat-section">
+        <div class="container mx-auto text-center">
+          <div class="d-flex flex-column item-center gap-2">
+            <h3 class="fw-bold">
+              How we Treat: Differently, Scientifically & Safely
+            </h3>
+            <p class="fw-semibold">The Science Behind Our Treatments</p>
+          </div>
+
+          <div class="row g-2 mb-4">
+            <div class="col-md-6">
+              <button class="btn btn-dark w-100" id="treatment">
+                How our Treatment works
+              </button>
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-dark w-100" id="process">
+                Treatment Approach
+              </button>
+            </div>
+          </div>
+          <!-- 1st Section -->
+          <div class="row g-2" id="treatment-content">
+            <div class="col-md-6">
+              <div class="d-flex flex-column gap-2">
+                <div class="treatment-card">
+                  <img
+                    src="/images/treatment2.png"
+                    alt="treatment-img"
+                    class="img-fluid object-fit-contain"
+                  />
+                  <h4>Microscopic Test</h4>
+                  <p class="text-start">
+                    Our doctors go beyond the surface of your scalp with a
+                    microscopic examination to understand the exact root cause
+                    of your hair loss
+                  </p>
+                </div>
+                <div class="treatment-card">
+                  <img
+                    src="/images/treatment1.png"
+                    alt="treatment-img"
+                    class="img-fluid object-fit-contain"
+                  />
+                  <h4>Microscopic Test</h4>
+                  <p class="text-start">
+                    Our doctors go beyond the surface of your scalp with a
+                    microscopic examination to understand the exact root cause
+                    of your hair loss
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex flex-column gap-2">
+                <div class="treatment-card">
+                  <img
+                    src="/images/treatment1.png"
+                    alt="treatment-img"
+                    class="img-fluid object-fit-contain"
+                  />
+                  <h4>Microscopic Test</h4>
+                  <p class="text-start">
+                    Our doctors go beyond the surface of your scalp with a
+                    microscopic examination to understand the exact root cause
+                    of your hair loss
+                  </p>
+                </div>
+                <div class="treatment-card">
+                  <img
+                    src="/images/treatment2.png"
+                    alt="treatment-img"
+                    class="img-fluid object-fit-contain"
+                  />
+                  <h4>Microscopic Test</h4>
+                  <p class="text-start">
+                    Our doctors go beyond the surface of your scalp with a
+                    microscopic examination to understand the exact root cause
+                    of your hair loss
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd Section -->
+          <div class="w-100 flex-column gap-3 p-2" id="treatment-process">
+            <div class="d-flex align-items-center gap-2">
+              <i
+                class="fa-solid fa-angles-right fa-md align-self-start pt-1"
+              ></i>
+              <p>
+                We use a unique dual approach combining homeopathy and advanced
+                aesthetic treatments to deliver visible hair regrowth in just
+                six sessions.
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i
+                class="fa-solid fa-angles-right fa-md align-self-start pt-1"
+              ></i>
+              <p>
+                We use a unique dual approach combining homeopathy and advanced
+                aesthetic treatments to deliver visible hair regrowth in just
+                six sessions.
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i
+                class="fa-solid fa-angles-right fa-md align-self-start pt-1"
+              ></i>
+              <p>
+                We use a unique dual approach combining homeopathy and advanced
+                aesthetic treatments to deliver visible hair regrowth in just
+                six sessions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Type of hair treatment -->
+      <section class="py-5" id="hair-type">
+        <div class="container mx-auto text-center">
+          <div class="d-flex flex-column item-center gap-2">
+            <h3 class="fw-bold">Types of Hair Treatment We Provide</h3>
+            <p class="fw-semibold">
+              Personalized Solutions for Every Condition
+            </p>
+          </div>
+
+          <div class="row g-2 mb-4">
+            <div class="col-md-6">
+              <button class="btn btn-dark w-100" id="hairfall">
+                Types of hair fall
+              </button>
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-dark w-100" id="hairtreatment">
+                Types of hair Treatment
+              </button>
+            </div>
+          </div>
+          <!-- 1st Section -->
+          <div class="row g-4" id="hairfall-content">
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Postpartum & Menopausal Hair Loss</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Hereditary Hair Loss</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Male & Female Pattern Baldness</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Stress-induced Hair Fall Treatment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Patchy Hair loss</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Scalp infection hair fall</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd Section -->
+          <div class="row g-4" id="hairtreatment-content">
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Hair Growth & Regrowth Treatment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Male & Female Pattern Baldness Treatment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Stress-induced Hair Fall Treatment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Alopecia Areata Hair Treatment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>General Hair Fall Treatment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Thinning Hair Treatment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Postpartum & Menopausal Hair Treatment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Dandruff Treatment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hair-card">
+                <i class="fa-solid fa-ruler fa-lg"></i>
+                <p>Hereditary Hair Loss Treatment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stages Section -->
+      <section class="py-5" id="stages-section">
+        <div class="container mx-auto text-center">
+          <div class="d-flex flex-column item-center gap-2">
+            <h3 class="fw-bold text-center">
+              Understanding the Stages of Hair Fall
+            </h3>
+            <p class="fw-semibold text-center">
+              At Dr Batra's®, we personalise treatments based on the severity of
+              hair loss, ensuring maximum regrowth potential. Hair loss
+              progresses in different stages:
+            </p>
+          </div>
+
+          <div class="row g-4 mb-4">
+            <div class="col-md-4">
+              <div class="stages-card">
+                <div class="stat-icon">
+                  <i class="fa-solid fa-shoe-prints fa-lg text-white"></i>
+                </div>
+                <span class="fw-bold">Stage 1 - 2</span>
+                <p>Mild thinning, slight hairline recession</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stages-card">
+                <div class="stat-icon">
+                  <i class="fa-solid fa-shoe-prints fa-lg text-white"></i>
+                </div>
+                <span class="fw-bold">Stage 3 - 4</span>
+                <p>Mild thinning, slight hairline recession</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stages-card">
+                <div class="stat-icon">
+                  <i class="fa-solid fa-shoe-prints fa-lg text-white"></i>
+                </div>
+                <span class="fw-bold">Stage 5 - 6</span>
+                <p>Mild thinning, slight hairline recession</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-dark">Book Your Consultation</button>
+        </div>
+      </section>
+
+      <!-- Doctor Section -->
+      <section class="container-fluid py-3" id="testimonial-section">
+        <div class="container mx-auto">
+          <div class="text-center d-flex flex-column">
+            <h3 class="fw-bold">Doctors Speak</h3>
+            <p class="fw-semibold">Accredited and recognized expertise</p>
+          </div>
+
+          <div class="owl-carousel doctors-carousel owl-theme">
+            <div class="item result-card">
+              <img
+                src="/images/result1.jpg"
+                alt="result-img"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="result-content">
+                <div class="result-top">
+                  <i class="fa-solid fa-circle-play fa-xl"></i>
+                  <span class="fw-bold text-white">Author Name</span>
+                </div>
+              </div>
+            </div>
+            <div class="item result-card">
+              <img
+                src="images/result2.jpg"
+                alt="result-img"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="result-content">
+                <div class="result-top">
+                  <i class="fa-solid fa-circle-play fa-xl"></i>
+                  <span class="fw-bold text-white">Author Name</span>
+                </div>
+              </div>
+            </div>
+            <div class="item result-card">
+              <img
+                src="images/result3.jpg"
+                alt="result-img"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="result-content">
+                <div class="result-top">
+                  <i class="fa-solid fa-circle-play fa-xl"></i>
+                  <span class="fw-bold text-white">Author Name</span>
+                </div>
+              </div>
+            </div>
+            <div class="item result-card">
+              <img
+                src="images/result4.jpg"
+                alt="result-img"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="result-content">
+                <div class="result-top">
+                  <i class="fa-solid fa-circle-play fa-xl"></i>
+                  <span class="fw-bold text-white">Author Name</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Google testimonials -->
+      <section class="container-fluid py-3" id="google-testimonial-section">
+        <div class="container mx-auto">
+          <div class="text-center d-flex flex-column mb-4">
+            <h3 class="fw-bold">Live Google Reviews</h3>
+            <p class="fw-semibold">Dynamic ratings from real patients</p>
+            <div class="d-flex align-items-center justify-content-center gap-2">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <p class="p-0 m-0">4.9 rating of 25856 reviews</p>
+            </div>
+          </div>
+
+          <div class="owl-carousel google-testimonial owl-theme">
+            <div class="item google-review-card">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="google-review-img">
+                    <img
+                      src="/images/user.png"
+                      alt="user-img"
+                      class="img-fluid object-fit-cover"
+                    />
+                  </div>
+                  <span>Jon Doe</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestiae, saepe corporis ratione incidunt quibusdam, soluta
+                  consectetur esse nam doloremque earum exercitationem nihil
+                  perspiciatis consequatur
+                </p>
+              </div>
+            </div>
+            <div class="item google-review-card">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="google-review-img">
+                    <img
+                      src="/images/user.png"
+                      alt="user-img"
+                      class="img-fluid object-fit-cover"
+                    />
+                  </div>
+                  <span>Jon Doe</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestiae, saepe corporis ratione incidunt quibusdam, soluta
+                  consectetur esse nam doloremque earum exercitationem nihil
+                  perspiciatis consequatur
+                </p>
+              </div>
+            </div>
+            <div class="item google-review-card">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="google-review-img">
+                    <img
+                      src="/images/user.png"
+                      alt="user-img"
+                      class="img-fluid object-fit-cover"
+                    />
+                  </div>
+                  <span>Jon Doe</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestiae, saepe corporis ratione incidunt quibusdam, soluta
+                  consectetur esse nam doloremque earum exercitationem nihil
+                  perspiciatis consequatur
+                </p>
+              </div>
+            </div>
+            <div class="item google-review-card">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="google-review-img">
+                    <img
+                      src="/images/user.png"
+                      alt="user-img"
+                      class="img-fluid object-fit-cover"
+                    />
+                  </div>
+                  <span>Jon Doe</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Molestiae, saepe corporis ratione incidunt quibusdam, soluta
+                  consectetur esse nam doloremque earum exercitationem nihil
+                  perspiciatis consequatur
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="py-4 px-2">
+      <div class="container mx-auto">
+        <div class="row g-4 align-items-center justify-content-start">
+          <div class="col-md-3">
+            <div class="d-flex flex-column gap-2">
+              <a class="navbar-brand" href="/">
+                <img
+                  src="./images/havells.png"
+                  alt="Logo"
+                  class="img-fluid w-50"
+                />
+              </a>
+              <p class="m-0 p-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                velit.
+              </p>
+              <div class="d-flex align-items-center gap-2">
+                <div class="social-icon">
+                  <i class="fa-brands fa-facebook-f text-light"></i>
+                </div>
+                <div class="social-icon">
+                  <i class="fa-brands fa-instagram text-light"></i>
+                </div>
+                <div class="social-icon">
+                  <i class="fa-brands fa-twitter text-light"></i>
+                </div>
+                <div class="social-icon">
+                  <i class="fa-brands fa-youtube text-light"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column gap-2">
+              <h4>Contact Us</h4>
+              <a
+                href="tel:+91-1234567890"
+                class="d-flex align-items-center gap-2 text-decoration-none"
+              >
+                <i class="fa-solid fa-phone-volume" id="icon"></i>
+                <span class="text-dark">+91-1234567890</span>
+              </a>
+              <a
+                href="mailto:support@gmail.com"
+                class="d-flex align-items-center gap-2 text-decoration-none"
+              >
+                <i class="fa-solid fa-paper-plane" id="icon"></i>
+                <span class="text-dark">support@gmail.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column gap-2">
+              <h4>Our Services</h4>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angles-right" id="icon"></i>
+                <span>Lorem</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angles-right" id="icon"></i>
+                <span>Lorem</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angles-right" id="icon"></i>
+                <span>Lorem</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column gap-2">
+              <h4>Quick Links</h4>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angles-right" id="icon"></i>
+                <span>Lorem</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angles-right" id="icon"></i>
+                <span>Lorem</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angles-right" id="icon"></i>
+                <span>Lorem</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="" />
+        <div class="d-flex align-items-center justify-content-center p-2">
+          <p>
+            Copyright &copy; 2025 Webzyro Technologies, Developed & Marketed by
+            Webzyro Technologies
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

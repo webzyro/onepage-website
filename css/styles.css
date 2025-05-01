@@ -1,0 +1,526 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#navbar-container {
+  background-color: #ffffff;
+}
+
+#offcanvasNavbar {
+  width: 80%;
+}
+
+#offcanvasNavbar > div.offcanvas-header {
+  background-color: #5c3474;
+}
+
+#hero-container {
+  background-color: #72448d;
+}
+
+#hero-section {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  overflow: hidden;
+}
+
+#hero-section #hero-left {
+  flex: 1;
+}
+
+#hero-section #hero-right {
+  flex: 1;
+  position: relative;
+  text-align: right;
+}
+
+#hero-section #hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+#btn {
+  width: fit-content;
+}
+
+.badges {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.badge {
+  position: absolute;
+  background-color: white;
+  color: #231f20 !important;
+  padding: 8px 15px !important;
+  border-radius: 10px !important;
+  font-size: 12px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.doctors {
+  top: 50%;
+  right: 60%;
+  border-radius: 40px !important;
+  width: 174.95px;
+  height: 63px;
+  gap: 12.22px;
+}
+
+.badge .number {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1167b1 !important;
+}
+
+.badge .text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14.58px !important;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.clinics {
+  top: 40%;
+  right: 0%;
+  border-radius: 52.8px !important;
+  background-color: black;
+  opacity: 0.8;
+  color: white !important;
+  width: 174.95px;
+  height: 54.66px;
+  gap: 8.38px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.patients {
+  bottom: 20%;
+  left: 25%;
+  border-radius: 52.8px !important;
+  background-color: black;
+  opacity: 0.8;
+  color: white !important;
+  width: 174.95px;
+  height: 59.66px;
+  gap: 8.38px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.success {
+  top: 65%;
+  right: 5%;
+  border-radius: 76.98px !important;
+  width: 174.95px;
+  height: 57.6px;
+  gap: 12.22px;
+  padding-top: 5.83px;
+  padding-bottom: 5.83px;
+}
+
+#stats-section {
+  background-color: #72578131;
+}
+
+#stats-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24%;
+  text-align: left;
+  gap: 10px;
+}
+
+.stat-icon {
+  background-color: #5c3474;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.stat-percentage {
+  font-size: 20px;
+  font-weight: bold;
+  color: #72448d;
+  margin-bottom: 2px;
+}
+
+.stat-text {
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 100%;
+  color: #909090;
+}
+
+.result-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.result-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#contact-section {
+  background-color: #72578131;
+}
+
+#contact-wrapper {
+  background-color: white;
+  border-radius: 15px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#treat-section {
+  background-color: #72578131;
+}
+
+.treatment-card {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: self-start;
+  padding: 10px;
+  transition: all 0.4s ease-out;
+}
+
+.treatment-card:hover {
+  transform: translateY(-5px);
+}
+
+#treatment-process {
+  display: none;
+}
+
+#treatment-process p {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+
+#treatment-process i {
+  color: #72448d;
+}
+
+.treatment-card img {
+  width: 42px;
+  height: 60px;
+}
+
+.treatment-card h4 {
+  font-size: 16px !important;
+  margin: 0 !important;
+  font-weight: 600 !important;
+}
+
+.treatment-card p {
+  font-size: 12px !important;
+  padding: 0 !important;
+  font-weight: 400 !important;
+}
+
+.hair-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px 10px;
+  border-radius: 15px;
+}
+
+.hair-card i {
+  color: #5c3474;
+}
+
+.hair-card p {
+  padding: 0;
+  margin: 0;
+}
+
+#hairtreatment-content {
+  display: none;
+}
+
+#stages-section {
+  background-color: #72578131;
+}
+
+.stages-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  border-radius: 15px;
+  transition: all 0.4s ease-out;
+}
+
+.stages-card:hover {
+  transform: translateY(-5px);
+}
+
+#google-testimonial-section {
+  background-color: #72578131;
+}
+
+.google-review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.google-review-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#service-name {
+  min-width: 70%;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #72448d;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 4px;
+}
+
+#service-name h4 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Gallery Section */
+#gallery-section {
+  background-color: #72578131;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.div1 {
+  grid-row: span 2 / span 2;
+}
+
+.div2 {
+  grid-row: span 3 / span 3;
+}
+
+.div3 {
+  grid-row: span 2 / span 2;
+}
+
+.div4 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.div5 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.div6 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.div7 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.div8 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 4;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #72448d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-out;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+#icon {
+  color: #5c3474;
+}
+
+@media screen and (max-width: 768px) {
+  #hero-section {
+    height: auto;
+  }
+
+  #hero-section {
+    flex-direction: column;
+  }
+
+  .doctors {
+    top: 40%;
+    right: 60%;
+    border-radius: 8px;
+    width: 120px;
+    height: 48px;
+    box-shadow: 0px 4px 8px 0px #0000001a;
+    gap: 8px;
+  }
+
+  .badge {
+    transform: scale(0.8);
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    border-radius: 8px;
+  }
+
+  .clinics {
+    top: 70%;
+    right: 5%;
+    border-radius: 8px;
+    width: 120px;
+    height: 48px;
+    box-shadow: 0px 4px 8px 0px #0000001a;
+  }
+
+  .patients {
+    bottom: 30%;
+    left: 5%;
+    border-radius: 8px;
+    width: 120px;
+    height: 48px;
+    box-shadow: 0px 4px 8px 0px #0000001a;
+  }
+
+  .success {
+    top: 50%;
+    right: 0%;
+    border-radius: 8px;
+    width: 115px;
+    height: 48px;
+    box-shadow: 0px 4px 8px 0px #0000001a;
+    gap: 8px;
+  }
+
+  .badge .number {
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 700;
+    font-size: 12px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0px;
+  }
+
+  .badge .text {
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 600;
+    font-size: 10px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  .stat-box {
+    width: 24%;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stat-icon {
+    margin-bottom: 10px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .stat-content {
+    align-items: center;
+  }
+
+  .stat-percentage {
+    font-size: 18px;
+  }
+
+  .stat-text {
+    font-size: 12px;
+  }
+
+  #service-name {
+    min-width: 100%;
+  }
+}
