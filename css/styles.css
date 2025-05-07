@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.active {
+  background-color: #000 !important;
+  color: white !important;
+}
+
 #navbar-container {
   background-color: #ffffff;
 }

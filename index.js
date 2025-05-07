@@ -111,11 +111,15 @@ const treatmentContent = document.getElementById("treatment-content");
 const treatmentProcess = document.getElementById("treatment-process");
 
 treatmentBtn.addEventListener("click", function () {
+  this.classList.add("active");
+  processBtn.classList.remove("active");
   treatmentContent.style.display = "flex";
   treatmentProcess.style.display = "none";
 });
 
 processBtn.addEventListener("click", function () {
+  this.classList.add("active");
+  treatmentBtn.classList.remove("active");
   treatmentProcess.style.display = "flex";
   treatmentContent.style.display = "none";
 });
@@ -126,25 +130,29 @@ const hairfallContent = document.getElementById("hairfall-content");
 const hairtreatment = document.getElementById("hairtreatment-content");
 
 hairfallBtn.addEventListener("click", function () {
+  this.classList.add("active");
+  hairtreatmentBtn.classList.remove("active");
   hairfallContent.style.display = "flex";
   hairtreatment.style.display = "none";
 });
 
 hairtreatmentBtn.addEventListener("click", function () {
+  this.classList.add("active");
+  hairfallBtn.classList.remove("active");
   hairfallContent.style.display = "none";
   hairtreatment.style.display = "flex";
 });
 
-document.onkeydown = function (e) {
-  if (
-    e.keyCode === 123 ||
-    (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) ||
-    (e.ctrlKey && e.keyCode === 85)
-  ) {
-    return false;
-  }
-};
+// document.onkeydown = function (e) {
+//   if (
+//     e.keyCode === 123 ||
+//     (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) ||
+//     (e.ctrlKey && e.keyCode === 85)
+//   ) {
+//     return false;
+//   }
+// };
 
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
-});
+// document.addEventListener("contextmenu", function (e) {
+//   e.preventDefault();
+// });
